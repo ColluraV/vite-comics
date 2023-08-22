@@ -8,7 +8,7 @@
         { name: "SUBSCRIPTION", img: "buy-comics-subscriptions.png" },
         { name: "COMIC SHOP LOCATOR", img: "buy-comics-shop-locator.png" },
         { name: "DC POWER VISA", img: "buy-dc-power-visa.svg" },
-      ],
+        ]
     };
   },
 };
@@ -18,34 +18,31 @@
 
     <main>
 
-        <div class="raw zonaMid darkBanner">
+        <div class="raw zonaMid darkBanner py-5">
             <div class="container">
-                <h2> Content goes here </h2>
+                <h2> -- > Content goes here  </h2>
             </div>
         </div>
 
         <div class="raw zonaMid blueBanner">
 
-            <div class="container">
+            <div class="container d-flex justify-content-center py-5">
 
-                <ul class="nav nav-pills">
-                    <li class="nav-item" v-for="link in navLinks">
+                <ul class="nav nav-pills ">
+                    <li class="nav-item my-auto" v-for="link in navLinks">
                      <a
                          href="#"
-                         class="nav-link">
+                         class="nav-link text-white">
                          <img v-bind:src="`/src/assets/${link.img}`" class="bannerImg" alt="" />
                          {{ link.name }}
 
                      </a>
                     </li>
                 </ul>
-    
             </div>
-
-
+        </div>
         
 
-        </div>
     </main>
     
 </template>
@@ -69,6 +66,9 @@
         color: white;
     }
     .bannerImg{
-        width: 80px;
+        max-height: 70px;
+        width: 50px;
     }
+
+
 </style>

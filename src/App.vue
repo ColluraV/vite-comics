@@ -1,13 +1,13 @@
 <script>
 import TheHeader from "./components/TheHeader.vue";
 import TheMid from "./components/TheMain(temporaneo).vue";
-/*import TheFooter from "./components/TheFooter.vue";*/
+import TheFooter from "./components/TheFooter.vue";
 
 export default {
   components: {
     TheHeader,
     TheMid,
-    /*TheFooter,*/
+    TheFooter
   },
   data() {
     return {};
@@ -18,9 +18,12 @@ export default {
 <template>
 <TheHeader/>
 <TheMid/>
+<TheFooter/>
 
 </template>
 
 <style scoped>
+
+
 
 </style>

@@ -4,16 +4,16 @@ export default {
   data() {
     return {
       navLinks: [
-        { name: "CHARACTERS", path: "/" },
-        { name: "COMICS", path: "/products" },
-        { name: "MOVIES", path: "/contacts" },
-        { name: "TV", path: "/about" },
-        { name: "GAMES", path: "/about" },
-        { name: "COLLECTABLES", path: "/about" },
-        { name: "VIDEOS", path: "/about" },
-        { name: "FANS", path: "/about" },
-        { name: "NEWS", path: "/about" },
-        { name: "SHOP", path: "/about" },
+        { name: "CHARACTERS" },
+        { name: "COMICS" },
+        { name: "MOVIES" },
+        { name: "TV" },
+        { name: "GAMES" },
+        { name: "COLLECTABLES" },
+        { name: "VIDEOS" },
+        { name: "FANS" },
+        { name: "NEWS" },
+        { name: "SHOP" },
       ],
     };
   },
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-  <header>
+  <header class="">
 
     <div class="container d-flex justify-content-between ">
 
@@ -31,7 +31,7 @@ export default {
       </div>
 
       <div>
-        <ul class="nav nav-pills">
+        <ul class="nav ">
       <li class="nav-item" v-for="link in navLinks">
         <a
           href="#"
@@ -57,19 +57,15 @@ header {
     width: 80px;
   }
 
-  .nav-item{
-      margin:auto 0 ;
-
-  }
-
   .nav-link {
 
     color: $colorText;
     font-weight:700;
-    &.active {
-      color: $color-primary;
-      background-color: $color-primary;
-    }
+   
+  }
+
+  li{
+    height: 100%;
   }
 }
 
