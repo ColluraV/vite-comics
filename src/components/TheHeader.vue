@@ -5,8 +5,8 @@ export default {
     return {
       navLinks: [
         { name: "CHARACTERS" },
-        { name: "COMICS" },
-        { name: "MOVIES" },
+        { name: "COMICS"},
+        { name: "MOVIES"},
         { name: "TV" },
         { name: "GAMES" },
         { name: "COLLECTABLES" },

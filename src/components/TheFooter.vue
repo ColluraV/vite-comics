@@ -43,10 +43,10 @@
 
 <template>
     <footer>
-        <div class="raw bottom">
-            <div class="container">
+        <div class="raw bottom d-flex">
+            <div class="container d-flex flex-column flex-wrap py-5">
 
-                <div class="bottomLinks">
+                <div class="bottomLinks ">
                     <H5> DC COMICS </H5>
                     <ul class="">
                         <li class="" v-for="link in DcComicsLinks">
@@ -102,14 +102,14 @@
                 </div>
             </div>
 
+
+        </div>
             <div class="contacts raw">
                 <div class="container">
-                    <div class="login"></div>
-                    <div class="socials"></div>
+                    <div class="login">gfdgfdgdf</div>
+                    <div class="socials">gfdgdfgd</div>
                 </div>
             </div>
-        </div>
-
 
     </footer>
 
@@ -118,18 +118,28 @@
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
 
-.bottomLinks li{
+    .bottomLinks{
+       max-width: 250px;
+    }
+    .bottomLinks li{
         list-style: none;
     }
+
+
     .bottomLinks li a{
         text-decoration: none;
         color: gray;
     }
     .bottom{
         background-image: url(../assets/footer-bg.jpg);
+        background-size: cover;
     }
 
     h5{
         color: white;
+    }
+
+    .raw.bottom{
+        height: 500px;
     }
 </style>
