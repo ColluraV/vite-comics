@@ -53,6 +53,14 @@ export default {
 header {
   height:150px;
 
+  .container{
+    height: 100%;
+    ul{
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+
   img {
     width: 80px;
   }

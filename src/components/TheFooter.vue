@@ -101,15 +101,21 @@
                     </ul>
                 </div>
             </div>
-
-
         </div>
-            <div class="contacts raw">
-                <div class="container">
-                    <div class="login">gfdgfdgdf</div>
-                    <div class="socials">gfdgdfgd</div>
+
+        <div class="contacts raw align-content-middle">
+            <div class="container d-flex justify-content-between">
+                <button type="button" class="btn btn-outline-primary">SIGN-UP NOW</button>
+                <div class="socials">
+                    FOLLOW US
+                    <img src="../assets/footer-facebook.png" alt="">
+                    <img src="../assets/footer-periscope.png" alt="">
+                    <img src="../assets/footer-pinterest.png" alt="">
+                    <img src="../assets/footer-twitter.png" alt="">
+                    <img src="../assets/footer-youtube.png" alt="">
                 </div>
             </div>
+        </div>
 
     </footer>
 
@@ -141,5 +147,35 @@
 
     .raw.bottom{
         height: 500px;
+    }
+
+    .contacts{
+        background-color: #303030;
+        height: 200px;
+        >.container{
+            height: 100%;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+    .btn-outline-primary{
+        border-radius: 0;
+        color: white;
+        font-size: 1.1rem;
+        height: 80px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .socials{
+        color:$color-primary;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-top: auto;
+        margin-bottom: auto;
+        > img{
+            margin: 0 10px;
+
+        }
     }
 </style>
