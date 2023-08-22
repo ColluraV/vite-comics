@@ -31,13 +31,11 @@ export default {
       </div>
 
       <div>
-        <ul class="nav ">
+        <ul class="nav nav-pills">
       <li class="nav-item" v-for="link in navLinks">
         <a
           href="#"
-          class="nav-link"
-          :class="{ active: link.name === 'Servizi' }"
-        >
+          class="nav-link">
           {{ link.name }}
         </a>
       </li>
@@ -51,4 +49,28 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
+
+header {
+  height:150px;
+
+  img {
+    width: 80px;
+  }
+
+  .nav-item{
+      margin:auto 0 ;
+
+  }
+
+  .nav-link {
+
+    color: $colorText;
+    font-weight:700;
+    &.active {
+      color: $color-primary;
+      background-color: $color-primary;
+    }
+  }
+}
+
 </style>
