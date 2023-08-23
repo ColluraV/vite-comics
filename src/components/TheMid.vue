@@ -16,13 +16,6 @@
 
 <template>
 
-    <main>
-
-        <div class="raw zonaMid darkBanner py-5">
-            <div class="container">
-                <h2> -- > Content goes here  </h2>
-            </div>
-        </div>
 
         <div class="raw zonaMid blueBanner">
 
@@ -43,7 +36,7 @@
         </div>
         
 
-    </main>
+   
     
 </template>
 
@@ -54,17 +47,11 @@
         min-height: 150px;
     }
 
-    .darkBanner{
-        background-color: $colorDark;
-    }
     .blueBanner{
         background-color: $color-primary;
         color: white;
     }
 
-    h2{
-        color: white;
-    }
     .bannerImg{
         max-height: 70px;
         width: 50px;

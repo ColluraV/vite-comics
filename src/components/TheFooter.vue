@@ -47,58 +47,58 @@
             <div class="container d-flex flex-column flex-wrap py-5">
 
                 <div class="bottomLinks ">
-                    <H5> DC COMICS </H5>
-                    <ul class="">
-                        <li class="" v-for="link in DcComicsLinks">
+                    <h5> DC COMICS </h5>
+                    
+                        <div class="" v-for="link in DcComicsLinks">
                         <a 
                           href="#"
                           class="">
                           {{ link.name }}
                         </a>
-                        </li>
-                    </ul>
+                        </div>
+                    
                 </div>
 
 
                 <div class="bottomLinks">
-                    <H5> SHOPS </H5>
+                    <h5> SHOPS </h5>
 
-                    <ul class="">
-                        <li class="" v-for="link in ShopLinks">
+                    
+                        <div class="" v-for="link in ShopLinks">
                         <a 
                           href="#"
                           class="">
                           {{ link.name }}
                         </a>
-                        </li>
-                    </ul>
+                        </div>
+                    
                 </div>
 
                 <div class="bottomLinks">
-                    <H5> DC </H5>
+                    <h5> DC </h5>
 
-                    <ul class="">
-                        <li class="" v-for="link in DCLinks">
+                    
+                        <div class="" v-for="link in DCLinks">
                         <a 
                           href="#"
                           class="">
                           {{ link.name }}
                         </a>
-                        </li>
-                    </ul>
+                        </div>
+                    
                 </div>
                 <div class="bottomLinks">
-                    <H5> SITES </H5>
+                    <h5> SITES </h5>
 
-                    <ul class="">
-                        <li class="" v-for="link in SitesLinks">
+                    
+                        <div class="" v-for="link in SitesLinks">
                         <a 
                           href="#"
                           class="">
                           {{ link.name }}
                         </a>
-                        </li>
-                    </ul>
+                        </div>
+                    
                 </div>
             </div>
         </div>
@@ -127,12 +127,9 @@
     .bottomLinks{
        max-width: 250px;
     }
-    .bottomLinks li{
-        list-style: none;
-    }
 
 
-    .bottomLinks li a{
+    div a{
         text-decoration: none;
         color: gray;
     }
