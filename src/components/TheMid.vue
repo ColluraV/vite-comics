@@ -17,16 +17,16 @@
 <template>
 
 
-        <div class="raw zonaMid blueBanner">
+        <div class="raw zonaMid blueBanner"><!-- //////banner blu////// -->
 
             <div class="container d-flex justify-content-center py-5">
 
                 <ul class="nav nav-pills ">
-                    <li class="nav-item my-auto" v-for="link in navLinks">
+                    <li class="nav-item my-auto" v-for="link in navLinks"><!-- ////// links shop v-for////// -->
                      <a
                          href="#"
                          class="nav-link text-white">
-                         <img v-bind:src="`/src/assets/${link.img}`" class="bannerImg" alt="" />
+                         <img v-bind:src="`/src/assets/${link.img}`" class="bannerImg" alt="" /><!-- //////loghi shop////// -->
                          {{ link.name }}
 
                      </a>

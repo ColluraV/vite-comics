@@ -25,11 +25,12 @@ export default {
 <TheHeader/>
 <main>
 
-  <div class="row zonaMid darkBanner py-5">
-    <div class="container text-center">
-      <h3 class="text-secondary">Lista Fumetti</h3> 
+  <div class=" darkBanner">
+    <img id="jumboImg" src="./assets/jumbotron.jpg" alt=""><!--jumbo-->
+    <div class="text-center relative">
+      <h3 id="title" class="absolute">CURRENT SERIES</h3> 
 
-      <div id="cards_container" class="row row-cols-6 gy-3 my-3">
+      <div id="cards_container" class="row row-cols-6 gy-3 my-5">
 
         <!--////////////// cards in ciclo for //////////////// -->
         <div class="col" 
@@ -63,11 +64,34 @@ export default {
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
 
+
     .darkBanner{
         background-color: $colorDark;
     }
     #cards_container{
-      max-width: 1100px;
+      max-width: 1400px;
       margin: auto;
+    }
+    #jumboImg{
+      height: 450px;
+      object-fit: cover;
+      object-position: top;
+      width: 100%;
+    }
+    #title{
+      background-color: $color-primary;
+      color: white;
+      top: -7%;
+      left:15%;
+      padding: 0.5rem;
+    }
+    .relative{
+      position: relative;
+
+
+    }
+    .absolute{
+      position: absolute; 
+
     }
 </style>

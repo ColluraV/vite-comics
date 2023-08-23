@@ -24,22 +24,22 @@ export default {
 <template>
   <header class="">
 
-    <div class="container d-flex justify-content-between ">
-
-      <div>        <!-- //////logo////// -->
+    <div class="d-flex justify-content-around">
+      
+      <div class=" my-4">        <!-- //////logo////// -->
         <img src="../assets/dc-logo.png" alt="">
       </div>
 
-      <div>
-        <ul class="nav ">
-      <li class="nav-item" v-for="link in navLinks">
-        <a
-          href="#"
-          class="nav-link">
-          {{ link.name }}
-        </a>
-      </li>
-    </ul>
+      <div class="LinkContainer d-flex align-items-center justify-content-evenly">
+
+        <div class="subbed d-flex" v-for="link in navLinks"> <!-- //////links top////// -->
+          <a
+            href="#"
+            class="nav-link">
+            {{ link.name }}
+          </a>
+        </div>
+
       </div>
 
     </div>
@@ -51,7 +51,7 @@ export default {
 @use "../styles/partials/variables" as *;
 
 header {
-  height:150px;
+
 
   .container{
     height: 100%;
@@ -72,9 +72,17 @@ header {
    
   }
 
-  li{
-    height: 100%;
+
+  .subbed{
+    border-bottom: 3px solid transparent;
+    margin-left: 1rem;
+
   }
+
+  .subbed:hover { border-bottom:2px solid $color-primary;}
+    
+  
+
 }
 
 </style>

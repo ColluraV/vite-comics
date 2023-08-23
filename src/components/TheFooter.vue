@@ -44,10 +44,10 @@
 <template>
     <footer>
         <div class="raw bottom d-flex">
-            <div class="container d-flex flex-column flex-wrap py-5">
+            <div class="col-6 d-flex flex-column flex-wrap py-4">
 
-                <div class="bottomLinks ">
-                    <h5> DC COMICS </h5>
+                <div class="bottomLinks ">   <!-- //////links array in v-for////// -->
+                    <h5> DC COMICS </h5> 
                     
                         <div class="" v-for="link in DcComicsLinks">
                         <a 
@@ -60,7 +60,7 @@
                 </div>
 
 
-                <div class="bottomLinks">
+                <div class="bottomLinks">   <!-- //////links array in v-for////// -->
                     <h5> SHOPS </h5>
 
                     
@@ -74,7 +74,7 @@
                     
                 </div>
 
-                <div class="bottomLinks">
+                <div class="bottomLinks">   <!-- //////links array in v-for////// -->
                     <h5> DC </h5>
 
                     
@@ -101,12 +101,15 @@
                     
                 </div>
             </div>
+            <div id="cutted" class="col-6"></div><!-- ////// dc logo////// -->
+                
+
         </div>
 
-        <div class="contacts raw align-content-middle">
+        <div class="contacts align-content-middle">
             <div class="container d-flex justify-content-between">
                 <button type="button" class="btn btn-outline-primary">SIGN-UP NOW</button>
-                <div class="socials">
+                <div class="socials">                       <!-- //////socials////// -->
                     FOLLOW US
                     <img src="../assets/footer-facebook.png" alt="">
                     <img src="../assets/footer-periscope.png" alt="">
@@ -143,7 +146,7 @@
     }
 
     .raw.bottom{
-        height: 500px;
+        height: 350px;
     }
 
     .contacts{
@@ -174,5 +177,11 @@
             margin: 0 10px;
 
         }
+    }
+
+    #cutted{
+        background-image: url(../assets/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 </style>

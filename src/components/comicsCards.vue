@@ -28,14 +28,14 @@
 
 <template>
 
-    <div class="card border-0 rounded-0 h-100">
-        <img class=" relative" :src="imgSrc" alt="" />
+    <div class="card border-0 rounded-0 h-100"> 
+        <img class=" relative" :src="imgSrc" alt="" /><!-- //////immagine////// -->
 
-        <div class="card-body text-white bg-dark">
+        <div class="card-body text-white bg-dark"> <!-- //////nome////// -->
         {{ serie }}
         </div>
 
-        <div class="overlay">
+        <div class="overlay"> <!-- //////info in hover////// -->
             <div class="absolute top hidden">Tipologia: <br>{{ tipologia }}</div>
             <div class="absolute bottom hidden">Prezzo: {{ prezzo }}</div>
         </div>
