@@ -43,8 +43,8 @@
 
 <template>
     <footer>
-        <div class="raw bottom d-flex">
-            <div class="col-6 d-flex flex-column flex-wrap py-4">
+        <div class="bottom d-flex">
+            <div class="col-6 d-flex flex-column flex-wrap p-5">
 
                 <div class="bottomLinks ">   <!-- //////links array in v-for////// -->
                     <h5> DC COMICS </h5> 
@@ -131,22 +131,23 @@
        max-width: 250px;
     }
 
-
+footer{
+    background-image: url(../assets/footer-bg.jpg);
+        background-size: cover;
+}
     div a{
         text-decoration: none;
         color: gray;
-    }
-    .bottom{
-        background-image: url(../assets/footer-bg.jpg);
-        background-size: cover;
     }
 
     h5{
         color: white;
     }
 
-    .raw.bottom{
+    .bottom{
         height: 350px;
+        max-width: 1400px;
+        margin: auto;
     }
 
     .contacts{
@@ -183,5 +184,8 @@
         background-image: url(../assets/dc-logo-bg.png);
         background-repeat: no-repeat;
         background-position: center;
+    }
+    .col-4{
+        margin-left: auto;
     }
 </style>
